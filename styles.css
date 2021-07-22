@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("bg-mobile.svg");
+    background-repeat: no-repeat;
+    ;
+}
+
+h2 , p {
+    color: white;
+}
+
+
+.logo  > img {
+    margin: 30px;
+    height: 5vh;
+}
+
+.img > img {
+    height: 25vh;
+    margin: 60px;
+
+}
+
+.text > h2 {
+    margin: 30px 50px 40px;
+    text-align: center;
+    
+}
+
+.text > p {
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.button1 {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+ 
+    
+    
+
+}
+
+.button1 > input {
+    padding: 10px 70px;
+    border-radius: 20px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 130px 40px;
+
+    
+}
+
+.facebook, .twitter, .instagram {
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 757px) {
+
+    body {
+        max-width: 1440px;
+        background-image: url("bg-desktop.svg");
+}
+
+.img > img {
+    height: 60vh;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    body {
+        max-width: 1440px;
+        background-image: url("bg-desktop.svg");
+    }
+  
+  .flex-container, .img, .button1 {
+      display: flex;
+  }
+
+  .img > img {
+      height: 70vh;
+  }
+ .icons {
+     float: right;
+    
+   
+ }
+}
